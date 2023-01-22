@@ -4,6 +4,7 @@ repo_url: https://github.com/bzoel/bzoel.github.io
 edit_uri: blob/main/docs/
 theme:
   name: material
+  custom_dir: docs/overrides
   icon:
     logo: fontawesome/solid/ethernet
     repo: fontawesome/brands/github
@@ -35,7 +36,7 @@ theme:
         name: Switch to system preference
   features:
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - navigation.tracking
     # - navigation.sections
@@ -44,7 +45,7 @@ theme:
     - content.code.copy
     - search.highlight
     - search.suggest
-    - content.action.edit
+    - content.action.view
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -90,7 +91,6 @@ plugins:
         as_creation: date
       categories:
         - categories
-
 nav:
   - Home: index.md
   - about.md
