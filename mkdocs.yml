@@ -65,9 +65,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
 plugins:
   - search
-  - social
+  # - social
   - meta
-  - optimize
+  # - optimize
   - glightbox
   - git-revision-date-localized:
       enable_creation_date: true
