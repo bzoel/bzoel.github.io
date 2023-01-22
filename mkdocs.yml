@@ -6,7 +6,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/ethernet
-    repo: fontawesome/brands/git
+    repo: fontawesome/brands/github
     admonition:
       tip: fontawesome/regular/lightbulb
       note: fontawesome/regular/note-sticky
@@ -33,13 +33,18 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-  
   features:
     - toc.follow
+    - toc.integrate
     - navigation.top
-    - navigation.sections
+    - navigation.tracking
+    # - navigation.sections
+    - navigation.path
     - content.code.annotate
     - content.code.copy
+    - search.highlight
+    - search.suggest
+    - content.action.edit
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -49,7 +54,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/bzoel
   generator: true
-copyright: 2023 Billy Zoellers
+copyright: Copyright &copy; 2023 Billy Zoellers
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -60,12 +65,15 @@ markdown_extensions:
   - pymdownx.inlinehilite
 plugins:
   - search
+  - social
   - meta
-  #- optimize
+  - optimize
   - glightbox
-  - git-revision-date-localized
-  #- git-committers:
-      #repository: bzoel/bzoel.github.io
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: bzoel/bzoel.github.io
+      branch: main
   - blog:
       blog_dir: .
       post_url_format: "{slug}"
@@ -86,7 +94,7 @@ plugins:
 nav:
   - Home: index.md
   - about.md
-  - Study Nodes:
+  - Cert Studies:
     - ENSDWI:
       - studies/ensdwi/1-architecture.md
       - studies/ensdwi/2-controller-deployment.md
