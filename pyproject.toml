@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bzwebsite"
+version = "0.1.0"
+description = "MKDocs-based blog for bzoel.io"
+authors = ["Billy Zoellers <billy.zoellers@mac.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mkdocs-material = {git = "ssh://git@github.com/squidfunk/mkdocs-material-insiders.git"}
+mkdocs-git-revision-date-localized-plugin = "^1.1.0"
+mkdocs-git-committers-plugin-2 = "^1.1.1"
+mkdocs-glightbox = "^0.3.1"
+mkdocs-rss-plugin = "^1.5.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

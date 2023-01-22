@@ -1,0 +1,47 @@
+name: Publish via GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11.0
+      
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v2
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: |
+          git config --global url."https://${{ secrets.GH_PAT }}:@github.com".insteadOf ssh://git@github.com
+          poetry install --no-interaction --no-root --without dev
+      
+      - name: Deploy Github Pages
+        run: |
+          git remote rm origin
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/bzoel/bzoel.github.io.git
+          poetry run mkdocs gh-deploy --force
+          git remote rm origin

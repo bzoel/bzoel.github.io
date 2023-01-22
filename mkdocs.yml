@@ -1,0 +1,96 @@
+site_name: Network Notes
+site_url: https://bzoel.io
+repo_url: https://github.com/bzoel/bzoel.github.io
+edit_uri: blob/main/docs/
+theme:
+  name: material
+  icon:
+    logo: fontawesome/solid/ethernet
+    repo: fontawesome/brands/git
+    admonition:
+      tip: fontawesome/regular/lightbulb
+      note: fontawesome/regular/note-sticky
+  font:
+    #text: Noto Serif
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: blue grey
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  
+  features:
+    - toc.follow
+    - navigation.top
+    - navigation.sections
+    - content.code.annotate
+    - content.code.copy
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/billyzoellers
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/billyzoellers
+    - icon: fontawesome/brands/github
+      link: https://github.com/bzoel
+  generator: true
+copyright: 2023 Billy Zoellers
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+plugins:
+  - search
+  - meta
+  #- optimize
+  - glightbox
+  - git-revision-date-localized
+  #- git-committers:
+      #repository: bzoel/bzoel.github.io
+  - blog:
+      blog_dir: .
+      post_url_format: "{slug}"
+      post_readtime: true
+      archive: false
+      archive_name: Posts
+      archive_date_format: MMMM YYYY
+      archive_url_date_format: YYYY
+      archive_url_format: "archive/{date}"
+      categories: false
+  - rss:
+      match_path: posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+
+nav:
+  - Home: index.md
+  - about.md
+  - Study Nodes:
+    - ENSDWI:
+      - studies/ensdwi/1-architecture.md
+      - studies/ensdwi/2-controller-deployment.md
+      - studies/ensdwi/3-router-deployment.md
+      - studies/ensdwi/4-policies.md
+      - studies/ensdwi/5-security-qos.md
+      - studies/ensdwi/6-management-operations.md
