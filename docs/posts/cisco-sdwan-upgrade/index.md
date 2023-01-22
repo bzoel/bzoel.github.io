@@ -4,9 +4,10 @@ authors:
  - billyzoellers
 categories:
     - Cisco
+description: Follow along with me as I upgrade our SD-WAN fabric from 20.3.5 to 20.6.3. Cisco SD-WAN upgrades are relatively painless, and easy to accomplish without downtime.
 ---
 # Let's upgrade Cisco SD-WAN
-![Cisco SD-WAN](cisco-sdwan-upgrade/cisco-sdwan.png)
+![Cisco SD-WAN](cisco-sdwan.png)
 
 I've long raved about how easy it is to perform an upgrade to the components of Cisco SD-WAN. Join me as we upgrade to the new gold star - 20.6.3 for the Viptela components with 17.6.3a for the cEdge.
 
@@ -24,7 +25,7 @@ The environment is fairly straightforward, with Cisco cloud deployed controllers
 You'll need a few different images for the upgrade, and they can be uploaded to the software repository in vManage (Maintenance > Software Repository > Software Images).
 
 <figure markdown>
-  ![Current software repository](cisco-sdwan-upgrade/current-software-repo.png){ loading=lazy }
+  ![Current software repository](current-software-repo.png){ loading=lazy }
   <figcaption>Current software repository</figcaption>
 </figure>
 
@@ -39,7 +40,7 @@ I'll upload each of the images with Add new Software > vManage, so that each ima
     - **IOS-XE for Catalyst 8xxx Edge platforms (Catalyst 8300)** c8000be-universalk9.17.06.03a.SPA.bin
 
 <figure markdown>
-  ![Upload software to vManage](cisco-sdwan-upgrade/upload-software.png){ loading=lazy }
+  ![Upload software to vManage](upload-software.png){ loading=lazy }
   <figcaption>Upload software to vManage</figcaption>
 </figure>
 
@@ -69,19 +70,19 @@ You can begin the upgrade by navigating to *Maintenance > Software Upgrade > vMa
 From there, use the Upgrade button to select the new image to apply to vManage.
 
 <figure markdown>
-  ![Upgrade vManage](cisco-sdwan-upgrade/upgrade-vmanage.png){ loading=lazy }
+  ![Upgrade vManage](upgrade-vmanage.png){ loading=lazy }
   <figcaption>Upgrade vManage</figcaption>
 </figure>
 
 <figure markdown>
-  ![vManage Software Install](cisco-sdwan-upgrade/vmanage-software-install.png){ loading=lazy }
+  ![vManage Software Install](vmanage-software-install.png){ loading=lazy }
   <figcaption>vManage Software Install</figcaption>
 </figure>
 
 So far, we're still running the old version of software (20.3.5). The new version has been downloaded to a new partition and is prepared for activation. We'll need to activate that partition using the *Activate* option within *Maintenance > Software Upgrade > vManage*.
 
 <figure markdown>
-  ![Activate vManage Software](cisco-sdwan-upgrade/activate-vmanage-software.png){ loading=lazy }
+  ![Activate vManage Software](activate-vmanage-software.png){ loading=lazy }
   <figcaption>Activate vManage Software</figcaption>
 </figure>
 
@@ -99,7 +100,7 @@ Though not required, I prefer to cleanup old and unnecessary software images. In
 After a successful vManage upgrade, it's time to upgrade our controllers - vSmart and vBond. Navigate to *Maintenance > Software Upgrade > Controllers*. You have the option to choose one or many controllers to upgrade.
 
 <figure markdown>
-  ![Controller Software Upgrade](cisco-sdwan-upgrade/controller-software-upgrade.png){ loading=lazy }
+  ![Controller Software Upgrade](controller-software-upgrade.png){ loading=lazy }
   <figcaption>Controller Software Upgrade</figcaption>
 </figure>
 
@@ -108,7 +109,7 @@ I'm going to choose all four controllers (two vSmart and two vBond) and select *
 We can skip a step here, and choose the *Activate and Reboot* option. This will cause the software image to be installed to each controller and then activated (which requires a reboot).
 
 <figure markdown>
-  ![Controller Software Upgrade - Activate and Reboot](cisco-sdwan-upgrade/controller-software-upgrade-activate-reboot.png){ loading=lazy }
+  ![Controller Software Upgrade - Activate and Reboot](controller-software-upgrade-activate-reboot.png){ loading=lazy }
   <figcaption>Controller Software Upgrade - Activate and Reboot</figcaption>
 </figure>
 
@@ -120,14 +121,14 @@ vManage has us covered with multiple features to ensure that there is no drop in
 2. By default **OMP Graceful Restart** is enabled. With this feature the Edge devices cache routing information for 12 hours. Data traffic would continue to flow if both vSmart went down, and the routing table would be repopulated upon a successful control connection.
 
 <figure markdown>
-  ![Individual controller upgrades](cisco-sdwan-upgrade/individual-controller-upgrades.png){ loading=lazy }
+  ![Individual controller upgrades](individual-controller-upgrades.png){ loading=lazy }
   <figcaption>Individual controller upgrades</figcaption>
 </figure>
 
 The upgrades may take a few minutes (6-7 minutes per controller in my case) but this part of the process is touch-less. Just monitor the progress as each controller upgrades and reboots.
 
 <figure markdown>
-  ![Controller Software Upgrade Complete](cisco-sdwan-upgrade/controller-software-upgrade-complete.png){ loading=lazy }
+  ![Controller Software Upgrade Complete](controller-software-upgrade-complete.png){ loading=lazy }
   <figcaption>Controller Software Upgrade Complete</figcaption>
 </figure>
 
@@ -141,7 +142,7 @@ With a successfully upgraded management plane (vManage), control plane (vSmart) 
 Navigate to *Maintenance > Software Upgrade > WAN Edge* to get started.
 
 <figure markdown>
-  ![WAN Edge Software Upgrade](cisco-sdwan-upgrade/wan-edge-software-upgrade.png){ loading=lazy }
+  ![WAN Edge Software Upgrade](wan-edge-software-upgrade.png){ loading=lazy }
   <figcaption>WAN Edge Software Upgrade</figcaption>
 </figure>
 
@@ -152,7 +153,7 @@ While you could choose all devices, and then Upgrade, I'll just choose a vEdge d
     You can also not choose Activate and Reboot when upgrading WAN Edges. This will result in the new software image being installed on an inactive partition. When you're ready, this should result in a quicker Activate cycle for sites that do not have redundant WAN Edges.
 
 <figure markdown>
-  ![WAN Edge Upgrade Complete](cisco-sdwan-upgrade/wan-edge-upgrade-complete.png){ loading=lazy }
+  ![WAN Edge Upgrade Complete](wan-edge-upgrade-complete.png){ loading=lazy }
   <figcaption>WAN Edge Upgrade Complete</figcaption>
 </figure>
 
