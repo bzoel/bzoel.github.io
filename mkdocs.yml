@@ -46,6 +46,7 @@ theme:
     - search.highlight
     - search.suggest
     - content.action.view
+    - content.tooltips
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -57,22 +58,27 @@ extra:
   generator: true
 copyright: Copyright &copy; 2023 Billy Zoellers
 markdown_extensions:
+  - abbr
   - attr_list
   - md_in_html
   - admonition
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 plugins:
   - search
   # - social
   - meta
   # - optimize
   - glightbox
-  - git-revision-date-localized:
-      enable_creation_date: true
+  - git-revision-date-localized
   - git-committers:
+      enabled: false
       repository: bzoel/bzoel.github.io
       branch: main
   - blog:
@@ -107,7 +113,7 @@ nav:
       - VPN Technologies: studies/ccnp-route/4-vpn-tech.md
       - Infrasturcture Security: studies/ccnp-route/5-infra-security.md
       - EIGRP: studies/ccnp-route/eigrp.md
-      - VRF-Lite: studies/ccnp-route/vrf-lite.md
+      - VRF-Lite: studies/ccnp-route/vrf-lite/index.md
     - ENSDWI:
       - studies/ensdwi/1-architecture.md
       - studies/ensdwi/2-controller-deployment.md

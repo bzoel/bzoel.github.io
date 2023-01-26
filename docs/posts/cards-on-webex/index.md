@@ -5,6 +5,7 @@ authors:
 categories:
     - API
 description: Find out about the various options for formatting messages on Webex Teams. Plain text, markdown, and now buttons & cards.
+slug: cards-on-webex
 ---
 
 # What are Cards on Webex Teams?

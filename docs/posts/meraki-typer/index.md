@@ -5,6 +5,7 @@ authors:
 categories:
     - API
 description: Typer is a library for building CLI applications. It boasts a simple syntax, features to minimize code duplication, and options to provide auto-completion and help for end users. It's great for creating automation tools while not sweating all the complexity of building a good CLI tool.
+slug: meraki-typer
 ---
 
 # Meraki automation using Typer

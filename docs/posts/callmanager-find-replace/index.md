@@ -5,6 +5,7 @@ authors:
 categories:
     - API
 description: A simple find and replace tool for calledPartyTransformationMasks in Cisco CallManager using Python. The ciscoaxl and rich libraries make it simple to interface with CallManager and create beautiful CLI output.
+slug: callmanager-find-replace
 ---
 
 # Automating Cisco CallManager

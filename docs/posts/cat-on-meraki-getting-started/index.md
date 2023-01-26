@@ -5,6 +5,7 @@ authors:
 categories:
     - Cisco
 description: Cisco Live 2022 represents the birth of "Catalyst on Meraki". Get started monitoring Catalyst 9500, 9300, and 9200 switches in Meraki Dashboard with just a few clicks!
+slug: cat-on-meraki-getting-started
 ---
 
 # Catalyst on Meraki: Getting Started

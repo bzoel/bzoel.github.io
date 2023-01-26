@@ -5,6 +5,7 @@ authors:
 categories:
     - Cisco
 description: Follow along with me as I upgrade our SD-WAN fabric from 20.3.5 to 20.6.3. Cisco SD-WAN upgrades are relatively painless, and easy to accomplish without downtime.
+slug: cisco-sdwan-upgrade
 ---
 # Let's upgrade Cisco SD-WAN
 ![Cisco SD-WAN](cisco-sdwan.png)
