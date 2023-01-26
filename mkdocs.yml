@@ -8,7 +8,7 @@ theme:
   name: material
   custom_dir: overrides/
   icon:
-    #logo: fapro5/chart-network
+    logo: fapro5/chart-network
     repo: fontawesome/brands/github
     admonition:
       tip: fontawesome/regular/lightbulb
