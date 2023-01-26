@@ -2,11 +2,13 @@ site_name: Network Notes
 site_url: https://bzoel.io
 repo_url: https://github.com/bzoel/bzoel.github.io
 edit_uri: blob/main/docs/
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides/
   icon:
-    logo: fontawesome/solid/ethernet
+    #logo: fapro5/chart-network
     repo: fontawesome/brands/github
     admonition:
       tip: fontawesome/regular/lightbulb
@@ -16,21 +18,18 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      primary: blue grey
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -52,7 +51,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/billyzoellers
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/billyzoellers
+      link: https://linkedin.com/in/billyzoellers
     - icon: fontawesome/brands/github
       link: https://github.com/bzoel
   generator: true
