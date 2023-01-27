@@ -105,7 +105,7 @@ plugins:
         - categories
 nav:
   - Home: index.md
-  - About: index.md
+  - About: about.md
   - Cert Studies:
     - CCIE Enterprise:
       - studies/ccie-ei/index.md
