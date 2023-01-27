@@ -1,1 +1,6 @@
+---
+hide:
+  - navigation
+---
+
 # Network Notes

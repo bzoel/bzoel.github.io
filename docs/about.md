@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # About
 
 I'm Billy Zoellers, a Lexington, KY based IT Infrastructure Consultant constantly striving to learn more about automation, security, and routing/switching.

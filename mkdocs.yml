@@ -39,7 +39,10 @@ theme:
     # - toc.integrate
     - navigation.top
     - navigation.tracking
-    # - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    # - navigation.instant
     - navigation.path
     - content.code.annotate
     - content.code.copy
