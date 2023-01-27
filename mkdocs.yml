@@ -37,6 +37,7 @@ theme:
   features:
     - toc.follow
     # - toc.integrate
+    - navigation.indexes
     - navigation.top
     - navigation.tracking
     - navigation.tabs
@@ -58,7 +59,7 @@ extra:
       link: https://linkedin.com/in/billyzoellers
     - icon: fontawesome/brands/github
       link: https://github.com/bzoel
-  generator: true
+  generator: false
 copyright: Copyright &copy; 2023 Billy Zoellers
 markdown_extensions:
   - abbr
@@ -78,7 +79,9 @@ plugins:
   # - social
   - meta
   # - optimize
-  - glightbox
+  - glightbox:
+      skip_classes:
+        - cert
   - git-revision-date-localized
   - git-committers:
       enabled: false
@@ -102,21 +105,21 @@ plugins:
         - categories
 nav:
   - Home: index.md
-  - about.md
+  - About: index.md
   - Cert Studies:
     - CCIE Enterprise:
-      - Overiew: studies/ccie-ei/index.md
+      - studies/ccie-ei/index.md
       - DMVPN: studies/ccie-ei/dmvpn.md
       - EIGRP: studies/ccie-ei/eigrp.md
       - OSPF: studies/ccie-ei/ospf.md
       - MPLS/L3VPN: studies/ccie-ei/mpls.md
       - Multicast: studies/ccie-ei/multicast.md
     - CCNP ROUTE:
-      - Network Principles: studies/ccnp-route/1-network-prin.md
-      - VPN Technologies: studies/ccnp-route/4-vpn-tech.md
-      - Infrasturcture Security: studies/ccnp-route/5-infra-security.md
-      - EIGRP: studies/ccnp-route/eigrp.md
-      - VRF-Lite: studies/ccnp-route/vrf-lite/index.md
+      - studies/ccnp-route/1-network-prin.md
+      - studies/ccnp-route/4-vpn-tech.md
+      - studies/ccnp-route/5-infra-security.md
+      - studies/ccnp-route/eigrp.md
+      - studies/ccnp-route/vrf-lite.md
     - ENSDWI:
       - studies/ensdwi/1-architecture.md
       - studies/ensdwi/2-controller-deployment.md

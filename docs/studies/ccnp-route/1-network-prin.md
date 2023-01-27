@@ -3,7 +3,7 @@ search:
   exclude: true
 ---
 
-# CCNP Route 1.0 Network Principles
+# 1.0 Network Principles
 
 ## 1.1 Identify Cisco Express Forwarding Concepts
 - IOS platform has 3 methods to forward packets (process switching, fast switching, CEF)

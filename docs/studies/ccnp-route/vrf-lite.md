@@ -10,7 +10,7 @@ search:
 
 ----
 
-![Lab Topology](vrflite-topo.png)
+![Lab Topology](vrf-lite/vrflite-topo.png)
 
 ## Configuring VRFs
 * Create a new VRF `ip vrf Red`

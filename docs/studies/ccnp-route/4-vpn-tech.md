@@ -3,7 +3,7 @@ search:
   exclude: true
 ---
 
-# CCNP ROUTE 4.0 VPN Technologies
+# 4.0 VPN Technologies
 
 ## 4.1 Configure and verify GRE
 * tunneling protocol to encapsulate wide variety of packet types "virtual P2P link"

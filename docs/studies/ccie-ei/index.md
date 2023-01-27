@@ -1,4 +1,5 @@
-# CCIE Class
+# CCIE Enterprise
+
 Notes from the Micronics CCIE class - beginning Nov 12, 2022.
 
 ## Sessions

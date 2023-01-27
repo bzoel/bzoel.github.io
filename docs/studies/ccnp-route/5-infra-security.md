@@ -3,7 +3,7 @@ search:
   exclude: true
 ---
 
-# ROUTE 5.0 Infrastructure Security
+# 5.0 Infrastructure Security
 
 ## 5.1 Describe IOS AAA using local database
 
