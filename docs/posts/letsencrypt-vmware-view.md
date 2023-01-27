@@ -78,6 +78,7 @@ Choose *Deployment Mode* of `Certificate Store Only`.
 1. Create a *Deploy to Generic Server (multi-purpose)* task to export the key and full chain of the certificate. These files will be consumed by the PowerShell script in the next step.
 
     a. *Task Parameters* > *Output filepath for key*: `C:\ssl-automation\view.key`
+    
     b. *Task Parameters* > *Output filepath for full chain*: `C:\ssl-automation\view.crt`
 
 2. Save this script in the new `ssl-automation` folder. Then create a *Run Powershell Script* task that will run this script.
