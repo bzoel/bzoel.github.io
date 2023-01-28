@@ -7,15 +7,14 @@ extra_css:
 theme:
   name: material
   custom_dir: overrides/
+  logo: assets/logo.svg
   icon:
-    logo: fa5/logo
+    #logo: fa5/logo
     repo: fontawesome/brands/github
     admonition:
       tip: fontawesome/regular/lightbulb
       note: fontawesome/regular/note-sticky
   favicon: assets/favicon.png
-  font:
-    #text: Noto Serif
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"

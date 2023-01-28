@@ -12,6 +12,10 @@
     --cert-img-hover-filter: brightness(90) opacity(1);
 }
 
+.md-logo img {
+    filter: invert(1);
+}
+
 .certimages {
     text-align: center;
 }
