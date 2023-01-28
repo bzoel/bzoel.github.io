@@ -1,5 +1,8 @@
 site_name: Network Notes
 site_url: https://bzoel.io
+site_author: Billy Zoellers
+site_description: Reflections of an IT Infrastructure Consultant learning about automation, security, and routing/switching
+repo_name: bzoel/bzoel.github.io
 repo_url: https://github.com/bzoel/bzoel.github.io
 edit_uri: blob/main/docs/
 extra_css:
