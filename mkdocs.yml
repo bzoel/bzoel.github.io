@@ -75,7 +75,7 @@ markdown_extensions:
         - includes/abbreviations.md
 plugins:
   - search
-  # - social
+  - social
   - meta
   # - optimize
   - glightbox:
