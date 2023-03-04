@@ -18,7 +18,8 @@ Notes from the Micronics CCIE class - beginning Nov 12, 2022.
 | Feb 4     | SDWAN / SD-Access      |
 | Feb 11    | SDWAN / SD-Access      |
 | Feb 18    | SDWAN / SD-Access      |
-|           | BGP                    |
+| Feb 25    | Automation             |
+| Mar 4     | BGP                    |
 |           | BGP                    |
 |           | IPv6                   |
 |           | NAT                    |
