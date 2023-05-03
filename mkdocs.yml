@@ -10,9 +10,8 @@ extra_css:
 theme:
   name: material
   custom_dir: overrides/
-  logo: assets/logo.svg
   icon:
-    #logo: fa5/logo
+    logo: fa5/logo
     repo: fontawesome/brands/github
     admonition:
       tip: fontawesome/regular/lightbulb
@@ -116,6 +115,8 @@ nav:
       - OSPF: studies/ccie-ei/ospf.md
       - MPLS/L3VPN: studies/ccie-ei/mpls.md
       - Multicast: studies/ccie-ei/multicast.md
+      - SD-Access: studies/ccie-ei/sdaccess.md
+      - BGP: studies/ccie-ei/bgp.md
     - CCNP ROUTE:
       - studies/ccnp-route/1-network-prin.md
       - studies/ccnp-route/4-vpn-tech.md
