@@ -14,13 +14,14 @@ Notes from the Micronics CCIE class - beginning Nov 12, 2022.
 | Dec 17    | OSPF                   |
 | Jan 7     | MPLS/L3VPN             |
 | Jan 14    | Multicast              |
-| Jan 28    | SDWAN / SD-Access      |
+| Jan 28    | SDWAN / SD-Access (cancelled) |
 | Feb 4     | SDWAN / SD-Access      |
 | Feb 11    | SDWAN / SD-Access      |
 | Feb 18    | SDWAN / SD-Access      |
 | Feb 25    | Automation             |
 | Mar 4     | BGP                    |
-|           | BGP                    |
+| Mar 11    | BGP                    |
+| Mar 18    | BGP                    |
 |           | IPv6                   |
 |           | NAT                    |
 |           | FHRP                   |
