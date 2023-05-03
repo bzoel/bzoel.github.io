@@ -1,5 +1,5 @@
 :root {
-    --md-primary-fg-color:        #294E85;
+    --md-primary-fg-color: #294E85;
     --cert-img-filter: grayscale(1) opacity(0.75);
     --cert-img-hover-filter: none;
 }
