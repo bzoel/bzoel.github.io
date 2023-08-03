@@ -60,7 +60,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/billyzoellers
+      link: https://twitter.com/bzoel
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/billyzoellers
     - icon: fontawesome/brands/github
@@ -77,6 +77,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
