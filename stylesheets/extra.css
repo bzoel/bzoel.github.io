@@ -1,0 +1,28 @@
+:root {
+    --md-primary-fg-color: #294E85;
+    --cert-img-filter: grayscale(1) opacity(0.75);
+    --cert-img-hover-filter: none;
+}
+  
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #3565AC;
+    --md-typeset-a-color: #93b1de;
+    --md-default-fg-color--light: #eef0fd;
+    --cert-img-filter: brightness(90) opacity(0.75);
+    --cert-img-hover-filter: brightness(90) opacity(1);
+}
+
+.certimages {
+    text-align: center;
+}
+
+.cert {
+    width: 115px;
+    vertical-align: middle;
+    margin: 10px;
+    filter: var(--cert-img-filter);
+}
+
+.cert:hover {
+    filter: var(--cert-img-hover-filter);
+}
