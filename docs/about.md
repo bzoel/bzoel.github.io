@@ -5,7 +5,7 @@ hide:
 
 # About
 
-Billy Zoellers is a Solutions Engineer at [Cisco](https://www.cisco.com), serving a select group of strategic manufacturing clients in Ohio, Indiana, Michigan, and Kentucky. Within his role as Cisco, he acts as technical advisor providing pre-sales support to customers across the entire Cisco porfolio.
+Billy Zoellers is a Solutions Engineer at [Cisco](https://www.cisco.com), serving a select group of strategic manufacturing clients in Ohio, Indiana, Michigan, and Kentucky. Within his role as Cisco, he acts as technical advisor providing pre-sales support to customers across the entire Cisco portfolio.
 
 Prior to joining Cisco, Billy worked as a Network Infrastructure consultant at a Cisco partner. He has extensive experience designing and implementing robust technology solutions. His technical acumen lies in route/switch, Cisco Firepower, the Meraki cloud-managed portfolio, Cisco SD-WAN, Amazon Web Services, and network automation.
 
