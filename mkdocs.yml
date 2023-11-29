@@ -66,7 +66,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/bzoel
   generator: false
-copyright: Copyright &copy; 2023 Billy Zoellers
+copyright: Copyright &copy; 2023 Billy Zoellers. The opinions expressed on this page are my own views and not those of my employer.
 markdown_extensions:
   - abbr
   - attr_list

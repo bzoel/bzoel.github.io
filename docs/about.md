@@ -5,11 +5,9 @@ hide:
 
 # About
 
-I'm Billy Zoellers, a Lexington, KY based IT Infrastructure Consultant constantly striving to learn more about automation, security, and routing/switching.
+Billy Zoellers is a Solutions Engineer at [Cisco](https://www.cisco.com), serving a select group of strategic manufacturing clients in Ohio, Indiana, Michigan, and Kentucky. Within his role as Cisco, he acts as technical advisor providing pre-sales support to customers across the entire Cisco porfolio.
 
-I attended [Transylvania University](https://transy.edu) for my Computer Science degree, and I currently work for a Cisco Premier Partner, [Dean Dorton](https://deandorton.com).
-
-I hold certifications from Cisco and VMware. Most recently I have found myself interested in network automation. I love the idea that I can sit on the fence between traditional network engineering and software development to build solutions.
+Prior to joining Cisco, Billy worked as a Network Infrastructure consultant at a Cisco partner. He has extensive experience designing and implementing robust technology solutions. His technical acumen lies in route/switch, Cisco Firepower, the Meraki cloud-managed portfolio, Cisco SD-WAN, Amazon Web Services, and network automation.
 
 <div class="certimages" markdown>
   <a href="https://www.credly.com/badges/adb43cc1-36dc-49ed-91b7-a2e81697fd99"><img class="cert" alt="CCNP Enterprise" src="ccnp-ent.svg"/></a>
