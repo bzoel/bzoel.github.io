@@ -5,9 +5,11 @@ hide:
 
 # About
 
-Billy Zoellers is a Solutions Engineer at [Cisco](https://www.cisco.com), serving a select, strategic group of manufacturing customers in Ohio, Indiana, Michigan, and Kentucky. In his role as Cisco, Billy acts as technical advisor providing pre-sales support to customers for the entire Cisco product portfolio.
+Billy Zoellers is a Solutions Engineer at [Cisco](https://www.cisco.com), serving a select, strategic group of healthcare customers in Southern Ohio. In his role at Cisco, Billy acts as technical advisor providing pre-sales support to customers for the entire Cisco product portfolio.
 
-Prior to joining Cisco, Billy worked as a network infrastructure consultant at a Cisco partner. He has extensive experience designing and implementing robust technology solutions. His technical acumen lies in route/switch, Cisco Firepower, the Meraki cloud-managed portfolio, Cisco SD-WAN, Amazon Web Services, and network automation.
+Prior to joining Cisco, Billy worked as a network infrastructure consultant at a Cisco partner. He has extensive experience designing and implementing robust technology solutions, with technical expertise spanning route/switch, Cisco Firepower, the Meraki cloud-managed portfolio, Cisco SD-WAN, Amazon Web Services, and network automation.
+
+Billy has a degree in Computer Science from [Transylvania University](https://www.transy.edu/academics/program/computer-science/) — a foundation that fuels his passion for network automation.
 
 <div class="certimages" markdown>
   <a href="https://www.credly.com/badges/adb43cc1-36dc-49ed-91b7-a2e81697fd99"><img class="cert" alt="CCNP Enterprise" src="ccnp-ent.svg"/></a>
