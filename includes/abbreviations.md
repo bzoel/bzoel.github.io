@@ -1,5 +1,6 @@
 *[ACME]:  Automated Certificate Management Environment
 *[DMVPN]: Dynamic Multipoint VPN
+*[CML]: Cisco Modeling Labs
 *[Dst]: Destination
 *[ECMP]: Equal-cost multi-path routing
 *[EIGRP]: Enhanced Interior Gateway Protocol
