@@ -16,11 +16,11 @@ jobs:
     steps:
       - uses: actions/configure-pages@v5
       - uses: actions/checkout@v5
-      - uses: actions/setup-python@v5
+      - name: Install uv and set python version
+        uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57 # v8.0.0
         with:
           python-version: 3.x
-      - run: pip install -r pyproject.toml
-      - run: mkdocs build --clean 
+      - run: uv run mkdocs build --clean 
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
