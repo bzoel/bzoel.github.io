@@ -84,9 +84,9 @@ markdown_extensions:
         - includes/abbreviations.md
 plugins:
   - search
-  # - social
+  - social
   - meta
-  # - optimize
+  - optimize
   - glightbox:
       skip_classes:
         - cert
