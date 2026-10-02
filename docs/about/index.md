@@ -9,8 +9,6 @@ Billy Zoellers is a Solutions Engineer at [Cisco](https://www.cisco.com), servin
 
 Prior to joining Cisco, Billy worked as a network infrastructure consultant at a Cisco partner. He has extensive experience designing and implementing robust technology solutions, with technical expertise spanning route/switch, Cisco Firepower, the Meraki cloud-managed portfolio, Cisco SD-WAN, Amazon Web Services, and network automation.
 
-Billy has a degree in Computer Science from [Transylvania University](https://www.transy.edu/academics/program/computer-science/) — a foundation that fuels his passion for network automation.
-
 <div class="certimages" markdown>
   <a href="https://www.credly.com/badges/adb43cc1-36dc-49ed-91b7-a2e81697fd99"><img class="cert" alt="CCNP Enterprise" src="ccnp-ent.svg"/></a>
   <a href="https://www.credly.com/badges/57f6f6ad-0550-4849-a1db-4362cc0e2033"><img class="cert" alt="CCDP" src="ccdp.svg"/></a>

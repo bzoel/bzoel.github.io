@@ -1,12 +1,11 @@
 :root {
-    --md-primary-fg-color: #294E85;
+    --md-accent-fg-color: #1975d2;
     --cert-img-filter: grayscale(1) opacity(0.75);
     --cert-img-hover-filter: none;
 }
   
 [data-md-color-scheme="slate"] {
-    --md-primary-fg-color: #3565AC;
-    --md-typeset-a-color: #93b1de;
+    --md-primary-fg-color: #93b1de;
     --md-default-fg-color--light: #eef0fd;
     --cert-img-filter: brightness(90) opacity(0.75);
     --cert-img-hover-filter: brightness(90) opacity(1);
@@ -25,4 +24,25 @@
 
 .cert:hover {
     filter: var(--cert-img-hover-filter);
+}
+
+.hero {
+  max-width: 34rem;
+  margin: 2vh auto 0;
+  text-align: center;
+}
+.hero-avatar {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+h1.hero-title {
+  font-size: 2rem;
+  margin: 0
+}
+p.hero-subtitle {
+  margin-block-start: 0.25em;
 }
