@@ -102,6 +102,7 @@ post_url_date_format = "yyyy/MM"
 categories = false
 archive_name = "Post Archive"
 post_readtime = true
+blog_toc = true
 
 [project.extra]
 generator = false

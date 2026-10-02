@@ -1,5 +1,6 @@
 ---
 title: Home
+description: Billy Zoellers is a Cincinnati-based Solutions Engineer at Cisco Systems.
 template: home.html
 hide:
     - navigation
