@@ -104,6 +104,9 @@ archive_name = "Post Archive"
 post_readtime = true
 blog_toc = true
 
+[project.plugins.social]
+cards_layout = "default/variant"
+
 [project.extra]
 generator = false
 
