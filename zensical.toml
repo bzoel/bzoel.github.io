@@ -107,6 +107,9 @@ blog_toc = true
 [project.plugins.social]
 cards_layout = "default/variant"
 
+[project.plugins.optimize]
+enabled = true
+
 [project.extra]
 generator = false
 

@@ -12,6 +12,7 @@ dependencies = [
     "cairosvg>=2.6.0,<3",
     "pillow>=10.4.0",
     "mkdocs-glightbox>=0.5.2",
+    "pngquant>=3.0.3",
 ]
 
 [dependency-groups]
